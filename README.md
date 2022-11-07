@@ -20,4 +20,6 @@ The task involved displaying the horizontal and vertical angle offset from the c
 The task involved creating a SystemD service daemon that runs the object detection pipeline on boot. The service file loads PyTorch, required CV libraries, and runs the object detection pipeline inside a virtual environment. The torch version is printed to the system log.
 
 ### Design Decisions
+Followed the instructions on the Google Slides presentation about SystemD. The service file is located in the systemd/ directory. The service file loads the virtual environment and runs the object detection pipeline. The service file is copied to /etc/systemd/system/ and the service is enabled and started. The service is started on boot.
+
 
