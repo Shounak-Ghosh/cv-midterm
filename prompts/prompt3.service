@@ -1,0 +1,15 @@
+[Unit]
+Description=CV midterm systemD daemon example
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+User=shounakg
+ExecStartPre=conda activate CV
+ExecStart=python /path/to/my/main.py
+
+[Install]
+WantedBy=multi-user.target
