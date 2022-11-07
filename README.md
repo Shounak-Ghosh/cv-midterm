@@ -14,6 +14,7 @@ A Capture class was created to handle the video capture and frame processing. Th
 The task involved displaying the horizontal and vertical angle offset from the center of a detection. The camera resolution/FOV was used for the x and y axis to determine the respective offsets.
 
 ### Design Decisions
+The DepthCamera class attempted to extract the bounding box coordinates in order to compute angle offsets. However, get_coordinates() was unable to return the bounding box coordinates. This issue needs to be resolved.
 
 
 ## Prompt 3 (SystemD)
