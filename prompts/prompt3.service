@@ -9,7 +9,7 @@ Restart=always
 RestartSec=2
 User=shounakg
 ExecStartPre=conda activate CV
-ExecStart=python /Downloads/CV_Detection-Shounak/Shounak-systemd.py
+ExecStart=python /Downloads/CV_Detection-Shounak/systemd.py
 
 [Install]
 WantedBy=multi-user.target
